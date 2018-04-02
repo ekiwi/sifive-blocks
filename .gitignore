@@ -1,2 +1,4 @@
 # sbt build files
 /target
+
+/project
