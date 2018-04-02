@@ -27,5 +27,8 @@ lazy val sifiveBlocks = (project in file("blocks")).
   dependsOn(rocketChip).
   settings(commonSettings: _*)
 
+lazy val fuzzStuff = (project in file(".")).
+  dependsOn(rocketChip, sifiveBlocks).
+  settings(commonSettings: _*)
 
 
